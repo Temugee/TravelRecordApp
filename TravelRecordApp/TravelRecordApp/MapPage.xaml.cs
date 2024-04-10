@@ -9,6 +9,7 @@ using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using Xamarin.Forms.Xaml;
+using Position = Xamarin.Forms.Maps.Position;
 
 namespace TravelRecordApp
 {
