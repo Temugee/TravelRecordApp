@@ -6,9 +6,11 @@
     <StackLayout Margin="15"
                  VerticalOptions="Center">
         <Entry x:Name="emailEntry"
+               Text="temuge"
                Placeholder="Email"
                Keyboard="Email"/>
         <Entry x:Name="passwordEntry"
+               Text="temuge"
                Placeholder="Password"
                IsPassword="True"/>
         <Button x:Name="loginButton"
