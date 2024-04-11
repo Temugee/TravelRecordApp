@@ -6,6 +6,7 @@ using TravelRecordApp.Model;
 using Xamarin.Forms;
 using Plugin.Geolocator;
 using System.Linq;
+using Plugin.Geolocator.Abstractions;
 
 namespace TravelRecordApp
 {
@@ -46,7 +47,15 @@ namespace TravelRecordApp
                 newPost = new Post()
                 {
                     Experience = experienceEntry.Text,
-                    VenueName = selectedVenue.name
+                    VenueName = selectedVenue.name,
+                    CategoryId = selectedVenue.categories[0].id.ToString(),
+                    CategoryName = selectedVenue.categories[0].name,
+                    Address = selectedVenue.location.address,
+                    Latitude = selectedVenue.geocodes.main.latitude,
+                    Longitude =selectedVenue.geocodes.main.longitude,
+                    Distance = selectedVenue.distance
+
+
                 };
             }
             catch (Exception ex)
