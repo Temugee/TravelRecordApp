@@ -2,7 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TravelRecordApp.ProfilePage">
-    <StackLayout>
-        <Label Text="Welcome to Profile page" />
-    </StackLayout>
+    <ContentPage.Content>
+        <StackLayout Margin="20, 40, 20, 0">
+            <Label x:Name="postCountLabel"
+           HorizontalOptions="Center"
+           TextColor="DodgerBlue"
+           Text="--"/>
+            <Label Text="posts"
+           HorizontalOptions="Center"
+           TextColor="LightGray"/>
+            <ListView x:Name="categoriesListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

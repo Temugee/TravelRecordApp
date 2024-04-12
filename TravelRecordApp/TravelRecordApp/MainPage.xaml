@@ -11,11 +11,11 @@
                HorizontalOptions="FillAndExpand"
                Margin="0, 0, 0, 50"/>
         <Entry x:Name="emailEntry"
-               Text="temuge"
+               Text="admin"
                Placeholder="Email"
                Keyboard="Email"/>
         <Entry x:Name="passwordEntry"
-               Text="temuge"
+               Text="123"
                Placeholder="Password"
                IsPassword="True"/>
         <Button x:Name="loginButton"
