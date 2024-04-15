@@ -4,8 +4,8 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TravelRecordApp.Helpers;
 using Xamarin.Forms;
-
 namespace TravelRecordApp
 {
     public partial class MainPage : ContentPage
@@ -30,6 +30,7 @@ namespace TravelRecordApp
             }
             else
             {
+                Auth.LoginUser(emailEntry.Text, passwordEntry.Text);
                 Navigation.PushAsync(new HomePage());
             }
         }
